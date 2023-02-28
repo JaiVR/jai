@@ -1,27 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
 
 body{
     background-color: black;
-    padding: 3%;
+    padding: 5%;
+    
     
 }
+.pages{
+    display: grid;
+    grid-template-rows: 1fr  1fr;
+    grid-row-gap: 2px;
+}
+
 h1{
-    font-family: 'Press Start 2P';
+    font-weight: bolder;
+    font-size: xx-large;
     color: rgb(255, 255, 255);
+    text-align: center;
+}
+.page1{
+    font-family: 'Press Start 2P';
 }
 
 .Logos{
     display: grid ;
-    grid-template-rows: 1fr 1fr 1fr;
-    
-    
-
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.lg1{
+    grid-column-start: 3;
 }
 .headers{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 0.8fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    padding: 15%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    padding: 21%;
 }
 .hG1{
     grid-column-start: 1;
@@ -59,24 +72,107 @@ h1{
         
     }
 }
+.page2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.2fr 2fr 01fr;
+    font-family: 'IBM Plex Mono';
+    
+}
+h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.imgedit{
+    border-radius: 2%;
+}
+.Skillimgs{
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+}
+.si1{
+    grid-column-start: 2;
+}
+.si4{
+    grid-column-start: 3;
+    grid-row-start: 3;
+    align-self: center;
+}
+.lhs{
+    grid-column-start: 2;
+}
+.rhs{
+    grid-column-start: 4;
+}
+
+
+
+
+
+
 
 
 @media screen and (max-width: 600px){
     .Logos{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr ;
         
     }
     .lg1{
         grid-column-start: 2;
     }
-    .lg2{
+    .page2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.1fr 1fr;
+        font-family: 'IBM Plex Mono';
+        
+    }
+    .h1{
+        text-align: center;
+    }
+    .rhs{
+        
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+    .img{
+        grid-column-start: 2;
+    }
+    .lhs{
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid: 1fr 1fr 1fr;
+    }
+    .imgedit{
+        align:center;
+    }
+    h2{
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    .imgedit{
+        border-radius: 2%;
+    }
+    .Skillimgs{
+        display: grid;
+        grid-template-columns: 0.4fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr 1fr;
+    }
+    .si1{
+        grid-column-start: 2;
+    }
+    .si4{
         grid-column-start: 3;
+        grid-row-start: 3;
+        align-self: center;
     }
-    .lg3{
-        grid-column-start: 4;
-    }
+    
 }
+
+
+
+
 
 
 
