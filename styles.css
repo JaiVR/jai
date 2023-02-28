@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body{
+    background-color: black;
+    padding: 3%;
+    
+}
+h1{
+    font-family: 'Press Start 2P';
+    color: rgb(255, 255, 255);
+}
+
+.Logos{
+    display: grid ;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+    
+
+}
+.headers{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 0.8fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    padding: 15%;
+}
+.hG1{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.hG2{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+.hG3{
+    grid-column-start: 6;
+    grid-row-start: 3;
+}
+.hG1{
+   animation: left-right 1.5s ease-in forwards infinite alternate;
+}
+.hG3{
+         animation: right-left 1.5s ease-in forwards infinite alternate;
+}
+@keyframes left-right{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%) rotate(180deg);
+        
+    }
+}
+@keyframes right-left{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%) rotate(-180deg);
+        
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .Logos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+        
+    }
+    .lg1{
+        grid-column-start: 2;
+    }
+    .lg2{
+        grid-column-start: 3;
+    }
+    .lg3{
+        grid-column-start: 4;
+    }
+}
+
+
+
