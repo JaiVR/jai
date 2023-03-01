@@ -111,11 +111,21 @@ h2{
 
 
 
-
 @media screen and (max-width: 600px){
+    body{
+        padding: 15%;
+    }
+    .pages{
+        display: grid;
+        grid-template-rows: 0.6fr  1fr;
+        
+    }
+    .page2{
+        grid-row-start: 2;
+    }
     .Logos{
         display: grid;
-        grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
         
     }
     .lg1{
@@ -123,7 +133,7 @@ h2{
     }
     .page2{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr ;
         grid-template-rows: 1fr 0.1fr 1fr;
         font-family: 'IBM Plex Mono';
         
@@ -136,17 +146,17 @@ h2{
         grid-row-start: 3;
         grid-column-start: 1;
     }
-    .img{
-        grid-column-start: 2;
-    }
+
     .lhs{
         grid-row-start: 1;
         grid-column-start: 1;
-        grid: 1fr 1fr 1fr;
+        align-items: center;
+        
     }
-    .imgedit{
-        align:center;
-    }
+   
+    
+   
+   
     h2{
         color: rgb(255, 255, 255);
         text-align: center;
